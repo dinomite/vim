@@ -1,0 +1,2 @@
+mark.vba: call delete('/home/drew/.vim/autoload/mark.vim')|call delete('/home/drew/.vim/plugin/mark.vim')|call delete('/home/drew/.vim/doc/mark.txt')
+camelcasemotion.vba: call delete('/home/drew/.vim/autoload/camelcasemotion.vim')|call delete('/home/drew/.vim/plugin/camelcasemotion.vim')|call delete('/home/drew/.vim/doc/camelcasemotion.txt')
