@@ -16,3 +16,6 @@
 [submodule "bundle/L9"]
 	path = bundle/L9
 	url = https://github.com/vim-scripts/L9.git
+[submodule "bundle/tir_black"]
+	path = bundle/tir_black
+	url = https://github.com/vim-scripts/tir_black.git
