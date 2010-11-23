@@ -19,3 +19,6 @@
 [submodule "bundle/tir_black"]
 	path = bundle/tir_black
 	url = https://github.com/vim-scripts/tir_black.git
+[submodule "bundle/FuzzyFinder"]
+	path = bundle/FuzzyFinder
+	url = https://github.com/vim-scripts/FuzzyFinder.git
