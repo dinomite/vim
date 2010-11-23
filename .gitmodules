@@ -1,3 +1,9 @@
 [submodule "bundle/FuzzyFinder"]
 	path = bundle/FuzzyFinder
 	url = https://github.com/vim-scripts/FuzzyFinder.git
+[submodule "bundle/Mark"]
+	path = bundle/Mark
+	url = https://github.com/vim-scripts/Mark--Karkat.git
+[submodule "bundle/camelcasemotion"]
+	path = bundle/camelcasemotion
+	url = https://github.com/vim-scripts/camelcasemotion.git
