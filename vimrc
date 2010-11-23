@@ -35,6 +35,7 @@ set laststatus=2
 set ruler                   " Show the cursor position all the time
 set title                   " Show title in title bar
 "set cursorline             " Highlight the current line
+"
 " Show tabs as ▷⋅ and trailing spaces as⋅
 " http://got-ravings.blogspot.com/2008/10/vim-pr0n-statusline-whitespace-flags.html
 set list
