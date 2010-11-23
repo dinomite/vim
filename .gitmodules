@@ -7,3 +7,9 @@
 [submodule "bundle/camelcasemotion"]
 	path = bundle/camelcasemotion
 	url = https://github.com/vim-scripts/camelcasemotion.git
+[submodule "bundle/NERDcommenter"]
+	path = bundle/NERDcommenter
+	url = https://github.com/vim-scripts/The-NERD-Commenter.git
+[submodule "bundle/NERDtree"]
+	path = bundle/NERDtree
+	url = https://github.com/vim-scripts/The-NERD-tree.git
