@@ -47,6 +47,11 @@ set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 
+" Python folks like two spaces :-/
+autocmd FileType python set tabstop=2|set shiftwidth=2
+" make requires real tabs
+autocmd FileType make set noexpandtab shiftwidth=8
+
 " Make function keys work within screen
 if !has("gui_running")
     set term=xterm-256color
@@ -141,8 +146,6 @@ autocmd FileType perl set keywordprg=perldoc\ -f
 inoremap # #
 " For C-like programming, cindent is the way to go
 autocmd FileType c,cpp,slang set cindent
-" make requires real tabs
-autocmd FileType make set noexpandtab shiftwidth=8
 " Check for file changes (svn ci, etc.) periodically and on window & buffer
 " switches
 autocmd CursorHold * checktime
