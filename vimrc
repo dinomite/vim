@@ -122,6 +122,12 @@ function! StatuslineTrailingSpaceWarning()
     return b:statusline_trailing_space_warning
 endfunction
 
+function! ForceMarkReload()
+    let g:force_load_mark = 1
+    source ~/.vim/bundle/Mark/plugin/mark.vim
+    let g:force_load_mark = 0
+endfunction
+
 syntax on
 set background=dark
 colors peachpuff-drew
