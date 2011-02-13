@@ -40,6 +40,13 @@ set title                   " Show title in title bar
 " http://got-ravings.blogspot.com/2008/10/vim-pr0n-statusline-whitespace-flags.html
 set list
 set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+function ToggleListchars()
+    if &listchars =~ "eol"
+        set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+    else
+        set listchars=tab:▷⋅,trail:⋅,nbsp:⋅,eol:$
+    endif
+endfunction
 
 " Make tabs be spaces instead
 set expandtab
