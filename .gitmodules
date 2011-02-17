@@ -31,3 +31,6 @@
 [submodule "bundle/sessionman"]
 	path = bundle/sessionman
 	url = https://github.com/vim-scripts/sessionman.vim.git
+[submodule "bundle/vimpage"]
+	path = bundle/vimpage
+	url = https://github.com/vim-scripts/vimpager.git
