@@ -20,8 +20,8 @@ let g:LustyJugglerSuppressRubyWarning = 1
 " Toggle search highlighting
 map <silent> <F1> :call ToggleListchars()<CR>
 " ToggleCommentify in both normal & insert mod
-nmap <F2> ,cij
-imap <F2> <ESC>,ciji
+nmap <F2> <leader>c<space>j
+imap <F2> <ESC><leader>c<space>ji
 " Toggle line numbers
 nmap <silent> <F3> :set invnumber<CR>
 
