@@ -129,10 +129,10 @@ function! StatuslineTrailingSpaceWarning()
     return b:statusline_trailing_space_warning
 endfunction
 
+" sessionman.vim mucks up Mark
 function! ForceMarkReload()
-    let g:force_load_mark = 1
+    unlet g:loaded_mark
     source ~/.vim/bundle/Mark/plugin/mark.vim
-    let g:force_load_mark = 0
 endfunction
 
 syntax on
