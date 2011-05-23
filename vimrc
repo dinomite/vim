@@ -229,6 +229,21 @@ function Toggle80CharacterHighlight()
     return
 endfunction
 
+command! -nargs=* Only call CloseUnloadedBuffers()
+function! CloseUnloadedBuffers()
+    let lastBuffer = bufnr('$')
+
+    let currentBuffer = 1
+    while currentBuffer <= lastBuffer
+        " If buffer exists, is shown in :ls output, and isn't loaded
+        if bufexists(currentBuffer) && buflisted(currentBuffer) && bufloaded(currentBuffer) == 0
+            execute 'bdelete' currentBuffer
+        endif
+
+        let currentBuffer = currentBuffer + 1
+    endwhile
+endfunction
+
 """ Correct misspellings
 "abbreviate foo foobar
 
