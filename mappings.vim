@@ -94,7 +94,7 @@ nmap <leader>p :pop<CR>
 
 " FuzzyFinder
 nmap <leader>f :FufFile<CR>
-nmap <leader>d :FufDir<CR>
+"nmap <leader>d :FufDir<CR>
 nmap <leader>T :FufTag<CR>
 
 " PDV (phpDocumentor for Vim)

@@ -31,3 +31,6 @@
 [submodule "bundle/sessionman"]
 	path = bundle/sessionman
 	url = https://github.com/vim-scripts/sessionman.vim.git
+[submodule "bundle/vim-scmdiff"]
+	path = bundle/vim-scmdiff
+	url = https://github.com/zalun/vim-scmdiff.git
