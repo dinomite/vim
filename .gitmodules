@@ -34,3 +34,6 @@
 [submodule "bundle/vim-scmdiff"]
 	path = bundle/vim-scmdiff
 	url = https://github.com/zalun/vim-scmdiff.git
+[submodule "bundle/unimpaired"]
+	path = bundle/unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
