@@ -67,6 +67,20 @@ xmap <silent> ie <Plug>CamelCaseMotion_ie
 " already done by yy):
 noremap Y y$
 
+" Emacs beginning/end of line shortcuts
+imap <C-a> <C-o>I
+" Make ctrl+e still work for cancelling autocompletion
+" http://stackoverflow.com/q/6926034/17339
+inoremap <c-e> <c-r>=InsCtrlE()<cr>
+function! InsCtrlE()
+    try
+        norm! i
+        return "\<c-o>A"
+    catch
+        return "\<c-e>"
+    endtry
+endfunction
+
 " After opening multiple files, < and > will browse through them all
 "map < :bn<CR>
 "map > :bp<CR>
