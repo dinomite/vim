@@ -17,9 +17,9 @@ let g:LustyJugglerSuppressRubyWarning = 1
 " Function keys
 " -------------
 
-" Toggle search highlighting
+" Toggle listchars for tabs & traling space
 map <silent> <F1> :call ToggleListchars()<CR>
-" ToggleCommentify in both normal & insert mod
+" ToggleCommentify in both normal & insert modes
 nmap <F2> <leader>c<space>j
 imap <F2> <ESC><leader>c<space>ji
 " Toggle line numbers
@@ -33,7 +33,6 @@ map <F9> :call Toggle80CharacterHighlight()<CR>
 map <F10> :qa
 " Syntax check PHP
 map <F11> :w !php -l<CR>
-" CTags
 
 " ----------
 " Other keys

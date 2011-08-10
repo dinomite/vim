@@ -28,12 +28,14 @@ set nobackup                " Don't keep a backup file
 set history=5000            " Keep 5000 lines of command line history
 set viminfo='20,\"50        " Read/write a .viminfo file, don't store more than
                             " 50 lines of registers
+set shortmess=atI           " Less interrupting prompts
 
 " Visual stuff
 set showcmd                 " Show information about ranges in the ruler
 set laststatus=2
 set ruler                   " Show the cursor position all the time
 set title                   " Show title in title bar
+set scrolloff=3             " Show some context when scrolling at edge of buffer
 "set cursorline             " Highlight the current line
 "
 " Show tabs as ▷⋅ and trailing spaces as⋅
