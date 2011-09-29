@@ -57,6 +57,11 @@ set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 
+" Python folks like two spaces :-/
+"autocmd FileType python set tabstop=2|set shiftwidth=2
+" make requires real tabs
+autocmd FileType make set noexpandtab shiftwidth=8
+
 " Make function keys work within screen
 if !has("gui_running")
     set term=xterm-256color
@@ -152,10 +157,6 @@ autocmd BufNewFile,BufRead *.jst set filetype=javascript
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 autocmd BufNewFile,BufRead *.t set filetype=perl
 
-" Python folks like two spaces :-/
-autocmd FileType python set tabstop=2|set shiftwidth=2
-" make requires real tabs
-autocmd FileType make set noexpandtab shiftwidth=8
 " For Perl programming, have things in braces indenting themselves:
 autocmd FileType perl set smartindent
 autocmd FileType perl set keywordprg=perldoc\ -f
