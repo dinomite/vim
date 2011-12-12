@@ -78,59 +78,9 @@ set guioptions-=L
 set guifont=monospace\ 8
 set mousehide
 
-" Statusline
-set statusline=%f           "tail of the filename
-set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
-set statusline+=%{&ff}]     "file format
-set statusline+=%h          "help file flag
-set statusline+=%m          "modified flag
-set statusline+=%r          "read only flag
-set statusline+=%y          "filetype
-" Warn if there are mixed tabs & spaces or if expandtab is wrong
-"set statusline+=%#error#
-set statusline+=%{StatuslineTabWarning()}
-set statusline+=%*
-set statusline+=%{StatuslineTrailingSpaceWarning()}
-set statusline+=%=      "left/right separator
-set statusline+=%c,     "cursor column
-set statusline+=%l/%L   "cursor line/total lines
-set statusline+=\ %P    "percent through file
-
-" Recalculate the tab warning flag when idle and after writing
-autocmd cursorhold,bufwritepost * unlet! b:statusline_tab_warning
-" return '[&et]' if &et is set wrong
-" return '[mixed-indenting]' if spaces and tabs are used to indent
-" return an empty string if everything is fine
-function! StatuslineTabWarning()
-    if !exists("b:statusline_tab_warning")
-        let tabs = search('^\t', 'nw') != 0
-        let spaces = search('^ ', 'nw') != 0
-
-        if tabs && spaces
-            let b:statusline_tab_warning =  '[mixed-indenting]'
-        elseif (spaces && !&et) || (tabs && &et)
-            let b:statusline_tab_warning = '[&et]'
-        else
-            let b:statusline_tab_warning = ''
-        endif
-    endif
-    return b:statusline_tab_warning
-endfunction
-
-" Recalculate the trailing whitespace warning when idle, and after saving
-autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
-" return '[\s]' if trailing white space is detected
-" return '' otherwise
-function! StatuslineTrailingSpaceWarning()
-    if !exists("b:statusline_trailing_space_warning")
-        if search('\s\+$', 'nw') != 0
-            let b:statusline_trailing_space_warning = '[\s]'
-        else
-            let b:statusline_trailing_space_warning = ''
-        endif
-    endif
-    return b:statusline_trailing_space_warning
-endfunction
+" Syntastic settings
+let g:syntastic_enable_signs=0
+let g:syntastic_auto_loc_list=0
 
 " sessionman.vim mucks up Mark
 function! ForceMarkReload()
