@@ -174,6 +174,20 @@ function TogglePaste()
     return
 endfunction
 
+let writing_mode = 0
+function ToggleWriting()
+    if g:writing_mode == 0
+        set formatoptions+=a
+        set tw=120
+        let g:writing_mode = 1
+    else
+        set formatoptions-=a
+        set tw=0
+        let g:writing_mode = 0
+    endif
+    return
+endfunction
+
 " Highlight lines over 80 characters long
 hi LineTooLong cterm=bold ctermbg=darkgreen gui=bold guibg=darkgreen
 let hl80char = 0
