@@ -13,6 +13,10 @@ let g:proj_window_width=30
 " Suppress the no-ruby warning from Lusty Explorer
 let g:LustyJugglerSuppressRubyWarning = 1
 
+" Reselect visual block after indent/outdent
+vnoremap < <gv
+vnoremap > >gv
+
 " -------------
 " Function keys
 " -------------
@@ -86,6 +90,8 @@ endfunction
 
 " Use Mark.vim via ctrl+m
 nmap  \m
+nmap <unique> <silent> <Leader>n <Plug>MarkAllClear
+nmap <unique> <silent> <Leader>h <Plug>MarkClear
 
 " Move around windows with ctrl key!
 map <C-H> <C-W>h
