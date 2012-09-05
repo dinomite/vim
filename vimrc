@@ -61,6 +61,8 @@ set shiftwidth=4
 autocmd FileType python set tabstop=2|set shiftwidth=2
 " CSS two space indent
 autocmd FileType css setlocal tabstop=2|setlocal shiftwidth=2
+" CSS two space indent
+autocmd FileType javascript setlocal tabstop=4|setlocal shiftwidth=4
 " make requires real tabs
 autocmd FileType make set noexpandtab shiftwidth=8
 
