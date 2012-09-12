@@ -58,7 +58,7 @@ set tabstop=4
 set shiftwidth=4
 
 " Python folks like two spaces :-/
-autocmd FileType python set tabstop=2|set shiftwidth=2
+"autocmd FileType python set tabstop=2|set shiftwidth=2
 " CSS two space indent
 autocmd FileType css setlocal tabstop=2|setlocal shiftwidth=2
 " CSS two space indent
