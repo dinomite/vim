@@ -3,7 +3,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 set nocompatible                " Ditch strict vi compatibility
-set hidden
+"set hidden
 " Clear existing autocommands
 autocmd!
 set backspace=indent,eol,start    " More powerful backspacing
