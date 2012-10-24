@@ -206,6 +206,19 @@ function Toggle80CharacterHighlight()
     return
 endfunction
 
+function ToggleProseMode()
+    if g:proseMode == 0
+        set textwidth=80
+        set spelllang=en
+        set spell
+        let g:proseMode = 1
+    else
+        match
+        let g:proseMode = 0
+    endif
+    return
+endfunction
+
 command! -nargs=* Only call CloseUnloadedBuffers()
 function! CloseUnloadedBuffers()
     let lastBuffer = bufnr('$')
