@@ -206,6 +206,7 @@ function Toggle80CharacterHighlight()
     return
 endfunction
 
+let proseMode = 0
 function ToggleProseMode()
     if g:proseMode == 0
         set textwidth=80
