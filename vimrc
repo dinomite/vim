@@ -65,6 +65,8 @@ autocmd FileType css setlocal tabstop=2|setlocal shiftwidth=2
 autocmd FileType javascript setlocal tabstop=4|setlocal shiftwidth=4
 " make requires real tabs
 autocmd FileType make set noexpandtab shiftwidth=8
+" C++ for ino, etc. files
+autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
 
 " Make function keys work within screen
 if !has("gui_running")
