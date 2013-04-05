@@ -112,6 +112,7 @@ filetype plugin indent on
 autocmd BufNewFile,BufRead *.jst set filetype=javascript
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 autocmd BufNewFile,BufRead *.t set filetype=perl
+autocmd BufNewFile,BufRead *.pp set filetype=ruby
 
 " For Perl programming, have things in braces indenting themselves:
 autocmd FileType perl set smartindent
