@@ -88,6 +88,9 @@ set mousehide
 let g:syntastic_enable_signs=0
 let g:syntastic_auto_loc_list=0
 
+" vim-markdown settings
+let g:vim_markdown_folding_disabled=1
+
 " sessionman.vim mucks up Mark
 function! ForceMarkReload()
     unlet g:loaded_mark
