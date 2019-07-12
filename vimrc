@@ -216,7 +216,7 @@ command! Prose inoremap <buffer> . .<C-G>u|
             \ inoremap <buffer> ! !<C-G>u|
             \ inoremap <buffer> ? ?<C-G>u|
             \ setlocal spell spelllang=en
-            \     nolist nowrap textwidth=80 formatoptions=tq nonu|
+            \     nolist nowrap textwidth=100 formatoptions=tq nonu|
             \ augroup PROSE|
             \   autocmd InsertEnter <buffer> set fo+=a|
             \   autocmd InsertLeave <buffer> set fo-=a|
