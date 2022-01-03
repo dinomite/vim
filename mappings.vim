@@ -69,6 +69,8 @@ xmap <silent> ie <Plug>CamelCaseMotion_ie
 " have Y behave analogously to D and C rather than to dd and cc (which is
 " already done by yy):
 noremap Y y$
+" Stamp selected text onto multiple places
+nnoremap S diw"0P
 
 " Emacs beginning/end of line shortcuts
 imap <C-a> <C-o>I
